@@ -1,0 +1,95 @@
+/* [project]/app/globals.css [app-client] (css) */
+:root {
+  --bg: #fff;
+  --ink: #141414;
+  --ink-2: #3c3c42;
+  --ink-3: #8a8a90;
+  --accent: #ff2e0f;
+  --accent-dark: #e02000;
+  --line: #ededef;
+  --ph: #f2f2f3;
+  --shadow: 0 24px 60px -12px #1414141a, 0 4px 16px #1414140d;
+  --shadow-lg: 0 48px 110px -20px #1414142e, 0 8px 28px #14141412;
+  --radius: 22px;
+  --max: 1280px;
+  --ease-out-expo: cubic-bezier(.16, 1, .3, 1);
+  --dur-fast: .2s;
+  --dur-base: .4s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+:root {
+  --nav-offset: 104px;
+}
+
+section[id], [id] {
+  scroll-margin-top: var(--nav-offset);
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-ui), -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: clip;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.finalFrame {
+  z-index: 20;
+  background: var(--bg, #fff);
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/*# sourceMappingURL=app_globals_css_1igg3k2._.single.css.map*/

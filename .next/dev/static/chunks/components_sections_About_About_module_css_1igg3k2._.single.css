@@ -1,0 +1,238 @@
+/* [project]/components/sections/About/About.module.css [app-client] (css) */
+.About-module__WabD6q__about {
+  background: #fff;
+  position: relative;
+}
+
+.About-module__WabD6q__wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 120px 44px 130px;
+}
+
+.About-module__WabD6q__eyebrow {
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 26px;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+}
+
+.About-module__WabD6q__eyebrow span {
+  color: var(--accent);
+  letter-spacing: .05em;
+}
+
+.About-module__WabD6q__eyebrow:after {
+  content: "";
+  background: var(--accent);
+  flex: 0 0 34px;
+  height: 1px;
+}
+
+.About-module__WabD6q__h2 {
+  letter-spacing: -.03em;
+  font-size: clamp(36px, 4.6vw, 62px);
+  font-weight: 900;
+  line-height: 1.02;
+}
+
+.About-module__WabD6q__serif {
+  font-family: var(--font-serif), Georgia, serif;
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.About-module__WabD6q__grid {
+  grid-template-columns: 1.15fr .85fr;
+  gap: 72px;
+  margin-top: 64px;
+  display: grid;
+}
+
+.About-module__WabD6q__beats {
+  flex-direction: column;
+  gap: 44px;
+  display: flex;
+}
+
+.About-module__WabD6q__beat {
+  gap: 22px;
+  display: flex;
+}
+
+.About-module__WabD6q__beatN {
+  color: var(--accent);
+  min-width: 26px;
+  padding-top: 7px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.About-module__WabD6q__beat h3 {
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.About-module__WabD6q__beat p {
+  color: var(--ink);
+  max-width: 560px;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.About-module__WabD6q__beat p b {
+  font-weight: 700;
+}
+
+.About-module__WabD6q__sideCol {
+  flex-direction: column;
+  gap: 30px;
+  display: flex;
+}
+
+.About-module__WabD6q__sideCard {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  will-change: transform;
+  background: #fff;
+  border: 1px solid #1414140a;
+}
+
+.About-module__WabD6q__imgCard {
+  background: var(--ph);
+  height: 300px;
+  color: var(--ink-3);
+  letter-spacing: .08em;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  transform: rotate(2deg);
+}
+
+.About-module__WabD6q__philoCard {
+  padding: 32px 34px;
+  transform: rotate(-1.5deg);
+}
+
+.About-module__WabD6q__philoCard h4 {
+  font-family: var(--font-script), cursive;
+  color: var(--ink-2);
+  margin-bottom: 12px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.About-module__WabD6q__philoCard ul {
+  list-style: none;
+}
+
+.About-module__WabD6q__philoCard li {
+  border-bottom: 1px solid #f3f3f4;
+  gap: 12px;
+  padding: 11px 0;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+}
+
+.About-module__WabD6q__philoCard li:last-child {
+  border: none;
+}
+
+.About-module__WabD6q__philoCard li span {
+  color: var(--accent);
+}
+
+.About-module__WabD6q__metrics {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  margin-top: 84px;
+  display: grid;
+}
+
+.About-module__WabD6q__metric {
+  border-top: 2px solid var(--ink);
+  padding-top: 20px;
+}
+
+.About-module__WabD6q__metricNum {
+  letter-spacing: -.02em;
+  align-items: baseline;
+  font-size: clamp(34px, 3.6vw, 50px);
+  font-weight: 900;
+  line-height: 1;
+  display: flex;
+}
+
+.About-module__WabD6q__metricNum i {
+  color: var(--accent);
+  font-style: normal;
+}
+
+.About-module__WabD6q__metricStatic {
+  font-weight: 900;
+}
+
+.About-module__WabD6q__metricLabel {
+  color: var(--ink-3);
+  max-width: 220px;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.About-module__WabD6q__edu {
+  color: var(--ink-2);
+  margin-top: 56px;
+  font-size: 14.5px;
+}
+
+.About-module__WabD6q__edu b {
+  color: var(--ink);
+}
+
+.About-module__WabD6q__next {
+  margin-top: 34px;
+}
+
+@media (max-width: 1100px) {
+  .About-module__WabD6q__wrap {
+    padding: 90px 24px 100px;
+  }
+
+  .About-module__WabD6q__grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .About-module__WabD6q__metrics {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 34px 24px;
+    margin-top: 64px;
+  }
+}
+
+@media (max-width: 560px) {
+  .About-module__WabD6q__beat p {
+    font-size: 17px;
+  }
+
+  .About-module__WabD6q__metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=components_sections_About_About_module_css_1igg3k2._.single.css.map*/

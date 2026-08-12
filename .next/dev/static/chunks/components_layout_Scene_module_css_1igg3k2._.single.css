@@ -1,0 +1,73 @@
+/* [project]/components/layout/Scene.module.css [app-client] (css) */
+.Scene-module__XLgPZG__hold {
+  background: var(--bg, #fff);
+  isolation: isolate;
+  height: 100svh;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.Scene-module__XLgPZG__hold > * {
+  height: 100%;
+}
+
+.Scene-module__XLgPZG__runway {
+  z-index: 0;
+  pointer-events: none;
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  .Scene-module__XLgPZG__hold {
+    isolation: auto;
+    height: auto;
+    min-height: auto;
+    position: static;
+    overflow: visible;
+  }
+
+  .Scene-module__XLgPZG__hold > * {
+    height: auto;
+  }
+
+  .Scene-module__XLgPZG__runway {
+    display: none;
+  }
+
+  .Scene-module__XLgPZG__keepFrame {
+    isolation: isolate;
+    height: 100svh;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .Scene-module__XLgPZG__keepFrame > * {
+    height: 100%;
+  }
+
+  .Scene-module__XLgPZG__keepRunway {
+    display: block;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .Scene-module__XLgPZG__hold, .Scene-module__XLgPZG__keepFrame {
+    isolation: auto;
+    height: auto;
+    min-height: auto;
+    position: static;
+    overflow: visible;
+  }
+
+  .Scene-module__XLgPZG__hold > *, .Scene-module__XLgPZG__keepFrame > * {
+    height: auto;
+  }
+
+  .Scene-module__XLgPZG__runway, .Scene-module__XLgPZG__keepRunway {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=components_layout_Scene_module_css_1igg3k2._.single.css.map*/

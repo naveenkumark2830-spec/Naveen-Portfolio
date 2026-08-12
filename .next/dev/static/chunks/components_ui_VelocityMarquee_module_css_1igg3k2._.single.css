@@ -1,0 +1,68 @@
+/* [project]/components/ui/VelocityMarquee.module.css [app-client] (css) */
+.VelocityMarquee-module__2Boapq__marquee {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+  flex-direction: column;
+  gap: 18px;
+  padding: 30px 0;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.VelocityMarquee-module__2Boapq__row {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.VelocityMarquee-module__2Boapq__track {
+  will-change: transform;
+  display: inline-flex;
+}
+
+.VelocityMarquee-module__2Boapq__copy, .VelocityMarquee-module__2Boapq__item {
+  align-items: baseline;
+  display: inline-flex;
+}
+
+.VelocityMarquee-module__2Boapq__solidText, .VelocityMarquee-module__2Boapq__outlineText {
+  letter-spacing: -.03em;
+  text-transform: none;
+  font-size: clamp(26px, 3.4vw, 46px);
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+.VelocityMarquee-module__2Boapq__solidText {
+  color: var(--ink);
+}
+
+.VelocityMarquee-module__2Boapq__outlineText {
+  color: #0000;
+  -webkit-text-stroke: 1.4px #1f1f22;
+}
+
+.VelocityMarquee-module__2Boapq__sep {
+  color: var(--accent);
+  align-self: center;
+  margin: 0 26px;
+  font-size: .5em;
+}
+
+.VelocityMarquee-module__2Boapq__srOnly {
+  clip-path: inset(50%);
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .VelocityMarquee-module__2Boapq__track {
+    transform: none !important;
+  }
+}
+
+/*# sourceMappingURL=components_ui_VelocityMarquee_module_css_1igg3k2._.single.css.map*/

@@ -1,0 +1,167 @@
+/* [project]/components/ui/Button.module.css [app-client] (css) */
+.Button-module__VMVMAW__btn {
+  --btn-bg: var(--accent);
+  --btn-fg: #fff;
+  --btn-fill: var(--ink);
+  --btn-fill-fg: #fff;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  isolation: isolate;
+  white-space: nowrap;
+  will-change: transform;
+  border-radius: 999px;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  transition: border-color .3s;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.Button-module__VMVMAW__btn:active {
+  scale: .97;
+}
+
+.Button-module__VMVMAW__fill {
+  aspect-ratio: 1;
+  background: var(--btn-fill);
+  width: 220%;
+  transition: transform .55s var(--ease-out-expo);
+  z-index: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%)scale(0);
+}
+
+.Button-module__VMVMAW__btn:hover .Button-module__VMVMAW__fill {
+  transform: translate(-50%, -50%)scale(1);
+}
+
+@media (hover: none) {
+  .Button-module__VMVMAW__btn:active .Button-module__VMVMAW__fill {
+    transform: translate(-50%, -50%)scale(1);
+  }
+
+  .Button-module__VMVMAW__btn:active .Button-module__VMVMAW__labelStack {
+    transform: translateY(-50%);
+  }
+}
+
+.Button-module__VMVMAW__labelWrap {
+  z-index: 1;
+  height: 1.4em;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.Button-module__VMVMAW__labelStack {
+  transition: transform .5s var(--ease-out-expo);
+  flex-direction: column;
+  display: flex;
+}
+
+.Button-module__VMVMAW__btn:hover .Button-module__VMVMAW__labelStack {
+  transform: translateY(-50%);
+}
+
+.Button-module__VMVMAW__label {
+  line-height: 1.4;
+  display: block;
+}
+
+.Button-module__VMVMAW__labelClone {
+  color: var(--btn-fill-fg);
+}
+
+.Button-module__VMVMAW__lead {
+  z-index: 1;
+  align-items: center;
+  font-size: .72em;
+  transition: color .35s;
+  display: inline-flex;
+  position: relative;
+}
+
+.Button-module__VMVMAW__btn:hover .Button-module__VMVMAW__lead {
+  color: var(--btn-fill-fg);
+}
+
+.Button-module__VMVMAW__arrow {
+  z-index: 1;
+  width: 1.7em;
+  height: 1.7em;
+  transition: transform .45s var(--ease-out-expo), background .35s ease, color .35s ease;
+  background: #ffffff2e;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: .85em;
+  display: inline-flex;
+  position: relative;
+}
+
+.Button-module__VMVMAW__btn:hover .Button-module__VMVMAW__arrow {
+  color: var(--btn-fill-fg);
+  transform: rotate(-45deg);
+}
+
+.Button-module__VMVMAW__primary {
+  --btn-bg: var(--accent);
+  --btn-fg: #fff;
+  --btn-fill: var(--ink);
+  --btn-fill-fg: #fff;
+}
+
+.Button-module__VMVMAW__dark {
+  --btn-bg: var(--ink);
+  --btn-fg: #fff;
+  --btn-fill: var(--accent);
+  --btn-fill-fg: #fff;
+}
+
+.Button-module__VMVMAW__ghost {
+  --btn-bg: #fff;
+  --btn-fg: var(--ink);
+  --btn-fill: var(--ink);
+  --btn-fill-fg: #fff;
+  border: 1.5px solid #e4e4e6;
+}
+
+.Button-module__VMVMAW__ghost:hover {
+  border-color: var(--ink);
+}
+
+.Button-module__VMVMAW__ghost .Button-module__VMVMAW__arrow {
+  background: #14141412;
+}
+
+.Button-module__VMVMAW__sm {
+  padding: 9px 18px;
+  font-size: 12.5px;
+}
+
+.Button-module__VMVMAW__md {
+  padding: 11px 20px;
+  font-size: 13px;
+}
+
+.Button-module__VMVMAW__btn:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .Button-module__VMVMAW__fill, .Button-module__VMVMAW__labelStack, .Button-module__VMVMAW__arrow {
+    transition: none;
+  }
+
+  .Button-module__VMVMAW__btn:hover .Button-module__VMVMAW__fill {
+    transform: translate(-50%, -50%)scale(1);
+  }
+}
+
+/*# sourceMappingURL=components_ui_Button_module_css_1igg3k2._.single.css.map*/
